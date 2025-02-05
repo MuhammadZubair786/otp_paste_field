@@ -1,6 +1,6 @@
 name: otp_paste_field
-description: "A Flutter widget for OTP input with paste functionality."
-version: 0.0.1
+description: "A Flutter OTP input widget with paste support, ideal for authentication screens, providing a smooth and seamless user experience."
+version: 0.0.7
 homepage: https://github.com/MuhammadZubair786/otp_paste_field
 
 environment:
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
 
 dev_dependencies:
   flutter_test:

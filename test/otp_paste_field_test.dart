@@ -3,12 +3,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:otp_paste_field/otp_paste_field.dart';
 
 void main() {
-  testWidgets('OtpPasteField should render OTP input fields', (WidgetTester tester) async {
+  testWidgets('OtpPasteField should render OTP input fields',
+      (WidgetTester tester) async {
     // Build the widget
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: Scaffold(
-          body: OtpPasteField(otpLength: 6),
+          body: OtpFieldView(otpLength: 6),
         ),
       ),
     );
@@ -17,11 +18,12 @@ void main() {
     expect(find.byType(TextField), findsNWidgets(6));
   });
 
-  testWidgets('OtpPasteField should paste OTP correctly', (WidgetTester tester) async {
+  testWidgets('OtpPasteField should paste OTP correctly',
+      (WidgetTester tester) async {
     await tester.pumpWidget(
-      MaterialApp(
+      const MaterialApp(
         home: Scaffold(
-          body: OtpPasteField(otpLength: 6),
+          body: OtpFieldView(otpLength: 6),
         ),
       ),
     );
